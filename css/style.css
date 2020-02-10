@@ -1,0 +1,914 @@
+@font-face {
+    font-family: "Solomon Sans Bold";
+    src: url("../fonts/solomon_sans_bold.woff") format("woff"),
+         url("../fonts/solomon_sans_bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Solomon Sans Normal";
+    src: url("../fonts/solomon_sans_normal.woff") format("woff"),
+         url("../fonts/solomon_sans_normal.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Solomon Sans Semibold";
+    src: url("../fonts/solomon_sans_semibold.woff") format("woff"),
+         url("../fonts/solomon_sans_semibold.woff2") format("woff2");
+}
+
+html {
+    font-size: 0.8333vw;
+}
+
+body {
+    font-family: "Solomon Sans Normal", sans-serif;
+}
+
+strong {
+    font-family: "Solomon Sans Bold", sans-serif;
+}
+
+section.header-section {
+    height: 62.503rem;
+    background-image: url(../content/Background/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header-menu-mobile {
+    display: none;
+}
+
+.header-topbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0.125rem 17rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(30px);
+    font-family: "Solomon Sans Bold";
+    font-size: 0.75rem;
+}
+
+.header-topbar * {
+    display: inline-block;
+}
+
+.header-topbar a {
+    color: white;
+    margin-right: 1.5rem;
+}
+
+.header-topbar-left, .header-topbar-right {
+    display: flex;
+    position: relative;
+}
+
+.header-cities li {
+    line-height: 1.5rem;
+}
+
+#kyiv, #odesa, #dnipro {
+    position: relative;
+}
+
+#kyiv:after, #odesa:after, #dnipro:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1rem;
+    background-color: #E5E5E5;
+    opacity: 0.2;
+    top: 0.25rem;
+}
+
+#kyiv:after {
+    left: 2.625rem;
+}
+
+#odesa:after {
+    left: 3.5rem;
+}
+
+#dnipro:after {
+    left: 3rem;
+}
+
+#ru-language, #ua-language {
+    margin-right: 0;
+    padding: 0.21875rem 0.625rem;
+}
+
+.language-active {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+}
+
+.header-online {
+    width: 4.0625rem;
+    height: 1.375rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    padding: 0 0.6175rem;
+    line-height: 2.7rem;
+    position: absolute;
+    left: 16rem;
+    bottom: 0.125rem;
+}
+
+.header-online-icon {
+    background-image: url(../images/Logo/OnlineOnly.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.header-top-icon svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 0.3125rem;
+    right: 11.8rem;
+}
+
+#header-tel {
+    line-height: 1.6rem;
+}
+
+.header-menu {
+    padding: 3.75rem 17rem 0 17rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu-logo {
+    background-image: url(../images/Logo/Lockin.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12.9375rem;
+    height: 2.525rem;
+}
+
+.menu-items {
+    display: flex;
+    line-height: 3.75rem;
+    position: relative;
+}
+
+.menu-items a {
+    color: white;
+    margin-right: 1.875rem;
+}
+
+#contacts {
+    margin-right: 0.7rem;
+}
+
+#consult {
+    display: none;
+}
+
+#courses:after {
+    content: '';
+    position: absolute;
+    width: 0.75rem;
+    height: 0.72rem;
+    top: 1.57rem;
+    left: 3rem;
+    background-image: url(../images/Icons/ArrowInline.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(90deg);
+}
+
+.courses-menu {
+    width: 12rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 7rem;
+    left: 37rem;
+    z-index: 9;
+    opacity: 1;
+    transition: all ease 0.2s;
+}
+
+.courses-hide {
+    opacity: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.courses-list li {
+    text-align: center;
+}
+
+.courses-list li i {
+    display: inline-block;
+    position: relative;
+    top: 0.37rem;
+}
+
+.courses-list a {
+    color: white;
+    line-height: 2.2rem;
+}
+
+.courses-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.front-basic {
+    background-image: url(../content/Courses/Front-EndBasic.svg);
+}
+
+.front-pro {
+    background-image: url(../content/Courses/Front-EndPro.svg);
+}
+
+.java-intro {
+    background-image: url(../content/Courses/IntroductionJava.svg);
+}
+
+.java-basic {
+    background-image: url(../content/Courses/JavaElementary.svg);
+}
+
+.java-pro {
+    background-image: url(../content/Courses/JavaEnterprise.svg);
+}
+
+.qa {
+    background-image: url(../content/Courses/QAManual.svg);
+}
+
+.smm {
+    background-image: url(../content/Courses/SMM.svg);
+}
+
+.header-center {
+    position: absolute;
+    top: 14.875rem;
+    left: 50%;
+    width: 36rem;
+    transform: translate(-50%);
+    text-align: center;
+    color: white;
+}
+
+.header-center-logo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 6.25rem;
+    background: linear-gradient(225deg, #FFD028 0%, #F8522D 100%);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.9375rem;
+}
+
+.header-center-logo:after {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 0.3rem;
+    left: 0.7rem;
+    background-image: url(../images/Icons/logo-cup.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.header-center-text, .header-center-text h1 {
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    letter-spacing: 0.2rem;
+}
+
+.header-center-text h1, .center-level {
+    font-family: "Solomon Sans Bold", sans-serif;
+}
+
+.center-level {
+    color: #FED530;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.rate {
+    display: inline-block;
+    width: 3.375rem;
+    height: 1.625rem;
+    background-color: #FED530;
+    border-radius: 1.875rem;
+    line-height: 1.6rem;
+}
+
+.rate-star {
+    display: inline-block;
+    width: 0.875rem;
+    height: 0.8rem;
+    background-image: url(../images/Rating/Small.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0.125rem;
+}
+
+.rate-number {
+    position: relative;
+    right: 0.125rem;
+}
+
+.votes {
+    color: #FED530;
+    margin-left: 0.5rem;
+}
+
+.header-center:after {
+    content: '';
+    position: absolute;
+    width: 15.125rem;
+    height: 0.125rem;
+    bottom: 12rem;
+    left: 10.6rem;
+    background-color: white;
+    opacity: 0.2;
+}
+
+.header-center-stats {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.125rem;
+    margin-top: 7.90625rem;
+}
+
+.header-center-stats i {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.6875rem;
+    position: relative;
+    top: 0.1875rem;
+}
+
+.clock-icon {
+    background-image: url(../images/CourseStats/Length.svg);
+}
+
+.calendar-icon {
+    background-image: url(../images/CourseStats/Duration.svg);
+    margin-left: 1.875rem;
+}
+
+.rocket-icon {
+    background-image: url(../images/CourseStats/Start.svg);
+    margin-left: 1.875rem;
+}
+
+.header-center-dynamic-stats {
+    margin-top: 1.25rem;
+    position: relative;
+    margin-bottom: 1.875rem;
+}
+
+.dynamic-stats {
+    padding-left: 0.125rem;
+    color: #4ED401;
+}
+
+#customers-per-week {
+    margin-right: 2.375rem;
+}
+
+#customers-per-week:after {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    top: 0.45rem;
+    left: 21.1rem;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+}
+
+.header-consultation-button {
+    font-family: "Solomon Sans Semibold", sans-serif;
+    color: white;
+    padding: 0.625rem 1.5625rem;
+    background-color: #4ED401;
+    border-radius: 0.625rem;
+    margin-top: 1.875rem;
+}
+
+.main-section {
+    padding: 5.625rem 33.4375rem;
+}
+
+.main-section h2 {
+    font-size: 3.125rem;
+}
+
+.main-section p {
+    margin-top: 1.875rem;
+    font-size: 1.125rem;
+    line-height: 2.2rem;
+}
+
+.text-blue {
+    display: inline-block;
+    color: #3461AA;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.main-background-text {
+    position: absolute;
+    left: 31.5625rem;
+    padding: 1.875rem;
+    width: 56.875rem;
+    box-sizing: content-box;
+    background-color: #F0FEE1;
+    font-size: 1.125rem;
+    border-radius: 0.75rem;
+}
+
+.strong-test {
+    display: inline-block;
+    padding-top: 0.75rem;
+}
+
+.main-test {
+    display: block;
+    width: 8.9375rem;
+    padding: 0.625rem 1.5625rem;
+    background-color: #4ED401;
+    color: white;
+    font-family: "Solomon Sans Semibold", sans-serif;
+    border-radius: 0.625rem;
+    margin-top: 1.25rem;
+    font-size: 1rem;
+}
+
+.technology-section {
+    position: relative;
+    top: 10.75rem;
+    padding: 3.75rem 32.4375rem;
+}
+
+.technology-section h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    color: #8D949E;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.technology-wrapp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.technology {
+    padding: 0 1.90625rem;
+}
+
+.technology-logo {
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 1.875rem;
+}
+
+.technology-logo.java {
+    background-image: url(../content/Technologies/Java.png);
+}
+
+.technology-logo.maven {
+    background-image: url(../content/Technologies/Maven.png);
+}
+
+.technology-logo.json {
+    background-image: url(../content/Technologies/Json.png);
+}
+
+.technology-logo.illij-idea {
+    background-image: url(../content/Technologies/Idea.png);
+}
+
+.technology-logo.git {
+    background-image: url(../content/Technologies/Git.png);
+}
+
+.technology-logo.rest {
+    background-image: url(../content/Technologies/Rest.png);
+}
+
+.technology-name {
+    text-align: center;
+    color: #6B6D72;
+    font-size: 0.875rem;
+    padding-top: 0.9375rem;
+}
+
+.teachers-section {
+    position: relative;
+    top: 12rem;
+    padding: 3.75rem 16.875rem 1.875rem 16.875rem;
+    background: #FAFAFA;
+}
+
+.teachers-section h3, .teachers-header  {
+    padding-left: 2rem;
+}
+
+.teachers-header {
+    padding-top: 0.6rem;
+}
+
+.teachers-section h3 {
+    color: #8D949E;
+    font-size: 1.875rem;
+}
+
+#teachers-slider {
+    margin-top: 1.875rem;
+}
+
+.teacher-container {
+    margin-right: 1.3rem;
+    background-color: white;
+    position: relative;
+    min-height: 30rem;
+}
+
+.teacher-container:after {
+    content: '';
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(../images/Icons/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+}
+
+.teacher-container:hover {
+    box-shadow: 0px 0px 30px #DCDFE4;
+}
+
+.teacher-photo {
+    width: 20.1875rem;
+    height: 12.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#teacher1 {
+    background-image: url(../content/Coaches/Coach_1.jpg);
+}
+
+#teacher2 {
+    background-image: url(../content/Coaches/Coach_2.jpg);
+}
+
+#teacher3 {
+    background-image: url(../content/Coaches/Coach_3.jpg);
+}
+
+#teacher4 {
+    background-image: url(../content/Coaches/Coach_4.jpg);
+}
+
+.teacher-info {
+    padding: 1.875rem;
+    width: 20.1875rem;
+}
+
+.teacher-name {
+    padding-top: 1.875rem;
+    font-size: 1.5rem;
+}
+
+.teacher-position {
+    padding-top: 0.625rem;
+}
+
+.teacher-company {
+    width: 7.5rem;
+    height: 3.125rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/Logo/OnlineOnly.svg);
+    margin-top: 1.5rem;
+    position: absolute;
+    left: 1.6rem;
+    top: 24rem;
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 1.25vw;
+    }
+
+    section.header-section {
+        height: 47.125rem;
+        background-size: cover;
+    }
+
+    .header-topbar {
+        padding: 0.125rem 1.875rem;
+    }
+
+    .header-menu {
+        padding: 3.75rem 1.875rem 0 1.875rem;
+    }
+
+    .header-center {
+        top: 8.625rem;
+    }
+
+    .main-section {
+        padding: 5.625rem 16.8125rem;
+    }
+
+    .main-background-text {
+        width: 50.125rem;
+        left: 14.9375rem;
+    }
+
+    .technology-section {
+        padding: 3.75rem 14.9375rem;
+    }
+
+    .technology {
+        padding: 0 1.7rem;
+    }
+
+    .decoration, .remove-sd {
+        display: none;
+    }
+
+    .teachers-section {
+        padding: 3.75rem 2rem 1.875rem 2rem;
+    }
+
+    .teacher-photo {
+        width: 17.625rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 1.5625vw;
+    }
+
+    section.header-section {
+        background-position: center;
+    }
+
+    .main-section {
+        padding: 5.625rem 14.1875rem;
+    }
+
+    .main-background-text {
+        width: 39.375rem;
+        left: 12.3125rem;
+    }
+
+    .technology-section {
+        padding: 3.75rem 6.59375rem;
+    }
+
+    .teachers-section {
+        padding: 3.75rem 1.875rem 1.875rem 1.875rem;
+    }
+
+    .teacher-photo {
+        width: 13.625rem;
+        height: 8.5rem;
+        background-size: cover;
+    }
+
+    .teacher-container {
+        width: 13.625rem;
+        min-height: 25rem;
+    }
+
+    .teacher-company {
+        width: 4.5rem;
+        top: 20rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 2.08333vw;
+    }
+
+    #webinars, #blog {
+        display: none;
+    }
+
+    .consult {
+        line-height: 1rem;
+        position: relative;
+        top: 1rem;
+        
+    }
+
+    #consult {
+        display: block;
+        border-radius: 0.5rem;
+        background-color: #4ED401;
+        padding: 0.4375rem 0.9375rem;
+        margin-right: 0;
+    }
+
+    .main-section {
+        padding: 5.625rem 3.75rem;
+    }
+
+    .main-background-text {
+        width: 40.5rem;
+        left: 1.875rem;
+    }
+
+    .technology-section {
+        padding: 3.75rem 5.40625rem;
+    }
+
+    .teacher-photo {
+        width: 100%;
+        height: 12.5rem;
+    }
+
+    .teacher-container {
+        min-height: 28rem;
+    }
+
+    .teacher-company {
+        top: 24rem;
+    }
+
+    .courses-menu {
+        left: 21.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .courses-menu {
+        display: none;
+    }
+
+    html {
+        font-size: 4.2666vw;
+    }
+
+    section.header-section {
+        width: 23.4375rem;
+    }
+
+    .header-topbar, .header-menu, #customers-per-week:after {
+        display: none;
+    }
+
+    .header-center {
+        width: 19.9375rem;
+        left: 52%;
+        top: 6rem;
+    }
+
+    .header-center-text, .header-center-text h1 {
+        font-size: 1.875rem;
+    }
+
+    .header-center-stats {
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        font-size: 1rem;
+    }
+
+    .header-center:after {
+        left: 2.6rem;
+        top: 21rem;
+    }
+
+    .calendar-icon {
+        margin-left: 1rem;
+    }
+
+    .rocket-icon {
+        margin-left: 0;
+    }
+
+    #customers-per-week {
+        margin-right: 0;
+    }
+
+    .main-background-text {
+        width: 19.7rem;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+    }
+
+    .header-menu-mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(20px);
+        padding: 0.75rem 1rem 0 1rem;
+    }
+
+    .tel-icon, .logo-mobile, .burger {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    .tel-icon {
+        width: 2rem;
+        height: 2rem;
+        background-image: url(../images/Icons/Phone.svg);
+
+    }
+
+    .logo-mobile {
+        width: 7rem;
+        height: 1.4375rem;
+        background-image: url(../images/Logo/Lockin-mobile.svg);
+    }
+
+    .burger {
+        width: 1.4375rem;
+        height: 1.4375rem;
+        background-image: url(../images/Icons/Burger.svg);
+    }
+
+    .main-section h2 {
+        font-size: 1.875rem;
+    }
+
+    .main-section {
+        padding: 3.75rem 1.875rem 1.875rem 1.875rem;
+    }
+
+    .text-blue:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .technology-section {
+        top: 17.75rem;
+        padding: 1.875rem;
+    }
+
+    .technology {
+        padding: 0 0.5rem;
+    }
+
+    .teachers-section {
+        top: 19rem;
+        padding: 1.875rem;
+    }
+    
+    .teachers-section h3 {
+        color: #000000;
+        font-size: 1.625rem;
+    }
+
+    .teachers-section h3, .teachers-header {
+        padding-left: 1rem;
+    }
+
+    .teacher-container {
+        margin-right: 0;
+    }
+
+    .teacher-photo {
+        width: 21.5625rem;
+        background-size: contain;
+    }
+
+    .teacher-name {
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+}

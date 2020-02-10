@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Arabadzhyi Maksym Test</title>
+</head>
+<body>
+    <section class="header-section">
+        <header>
+
+            <div class="header-topbar">
+                <div class="header-topbar-left">
+                    <ul class="header-cities">
+                        <li><a href="#" id="kyiv">Киев</a></li>
+                        <li><a href="#" id="odesa">Одесса</a></li>
+                        <li><a href="#" id="dnipro">Днепр</a></li>
+                        <li><a href="#" id="kharkov">Харьков</a></li>
+                    </ul>
+                    <div class="header-online">
+                        <i class="header-online-icon"></i>
+                    </div>
+                </div>
+                <div class="header-topbar-right">
+                    <div class="header-top-icon">
+                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
+                            <path class="svg-fill" d="M18.736 14.486a1.29 1.29 0 00-.303-.039l-.013.002a10.468 10.468 0 01-4.115-1.428l-1.906 1.949c-1.409-.95-2.631-2.22-3.581-3.533h-.005.005l1.909-1.949A10.561 10.561 0 019.3 5.352l.003-.024c0-.105-.016-.211-.039-.308A1.32 1.32 0 007.986 4H5.317c-.716 0-1.297.573-1.314 1.285 0 .011-.003.021-.003.032 0 .077.01.151.022.223a15.722 15.722 0 002.903 7.711 15.815 15.815 0 003.577 3.574 15.727 15.727 0 007.704 2.902c.074.013.15.023.227.023.011 0 .022-.003.033-.004a1.313 1.313 0 001.284-1.313v-2.669c0-.622-.434-1.142-1.014-1.278z" fill="#ffffff"/>
+                        </svg>
+                    </div>
+                    <a id="header-tel" href="tel:+380800330867">0 800 33 08 67</a>
+                    <ul class="header-languages">
+                        <li><a href="#" id="ru-language" class="language-active">Рус</a></li>
+                        <li><a href="#" id="ua-language">Укр</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-menu">
+                <div class="header-menu-logo"></div>
+                <div class="header-menu-items">
+                    <ul class="menu-items">
+                        <li><a href="#" id="courses">курсы</a></li>
+                        <li><a href="#" id="webinars">вебинары</a></li>
+                        <li><a href="#" id="blog">блог</a></li>
+                        <li><a href="#" id="contacts">контакты</a></li>
+                        <li class="consult"><a href="#" id="consult">Консультация</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="courses-menu courses-hide">
+                <ul class="courses-list">
+                    <li>
+                        <i class="courses-icon front-basic"></i>
+                        <a href="#">Front-end Basic</a>
+                    </li>
+                    <li>
+                        <i class="courses-icon front-pro"></i>
+                        <a href="#">Front-end Pro</a>
+                    </li>
+                    <li>
+                        <i class="courses-icon java-intro"></i>
+                        <a href="#">Introduction Java</a>
+                    </li>
+                    <li>
+                        <i class="courses-icon java-basic"></i>
+                        <a href="#">Java Elementary</a>
+                    </li>
+                    <li>
+                        <i class="courses-icon java-pro"></i>
+                        <a href="#">Java Enterprise</a>
+                    </li>
+                    <li>
+                        <i class="courses-icon qa"></i>
+                        <a href="#">QA Manual</a>
+                    </li>
+                    <li>
+                        <i class="courses-icon smm"></i>
+                        <a href="#">SMM</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header-menu-mobile">
+                <div class="tel-icon" ><a href="tel:+380800330867"></a></div>
+                <div class="logo-mobile"></div>
+                <div class="burger"><a href="#"></a></div>
+            </div>
+
+            <div class="header-center">
+                <div class="header-center-logo"></div>
+                <div class="header-center-text">
+                    <p>
+                        <span class="center-text">Онлайн курс</span>
+                        <br>
+                        <h1 class="center-name">Java Elementary</h1>
+                        <span class="center-level">advanced level</span>
+                    </p>
+                </div>
+                <div class="header-center-rate">
+                    <div class="rate">
+                        <i class="rate-star"></i>
+                        <span class="rate-number">4.5</span>
+                    </div>
+                    <span class="votes">37 голосов</span>
+                </div>
+                <div class="header-center-stats">
+                    <p>
+                        <i class="clock-icon"></i>
+                        <span>32 занятия</span>
+                    </p>
+                    <p>
+                        <i class="calendar-icon"></i>
+                        <span>2 занятия в неделю</span>
+                    </p>
+                    <p>
+                        <i class="rocket-icon"></i>
+                        <span>Старт в январе</span>
+                    </p>
+                </div>
+                <div class="header-center-dynamic-stats">
+                    <p>
+                        <span>За неделю записался</span>
+                        <span class="dynamic-stats" id="customers-per-week">1 человек</span>
+                        <span>Осталось</span>
+                        <span class="dynamic-stats" id="available-seats">3 места</span>
+                    </p>
+                </div>
+                <a href="#" class="header-consultation-button">Бесплатная консультация</a>
+            </div>
+
+        </header>
+    </section>
+
+    <section class="main-section">
+        <h2>Хватит страдать,<br>начни писать на Java!</h2>
+        <p>
+            <span>Курс Java Elementary предназначен для тех, кто желает получить специальность Java Developer и планирует развивать свою будущую профессиональную деятельность в IT-сфере. В течение обучения вы получите знания, необходимые для создания Java-приложений. Этот курс рассчитан на людей с базовыми знаниями в любом С-подобном языке программирования.</span>
+            <br>
+            <span class="text-blue">
+                <strong><b>Цель курса</b></strong> — дать необходимый объем знаний для прохождения собеседования на должность Junior Java Developer.
+            </span>
+            <br>
+            <span class="text-blue">
+                <strong><b>Курс поможет</b></strong> вам получить знания, необходимые для создания реальных Java-приложений.
+            </span>
+        </p>
+        <div class="main-background-text">
+            <span><strong>Курс рассчитан</strong> на людей, окончивших курс Introduction Java, или с базовыми знаниями в любом С-подобном языке программирования.</span>
+            <br>
+            <span class="strong-test"><strong class="strong-test">Для записи требуется пройти тест.</strong></span>
+            <a href="#" class="main-test">Пройти тест</a>
+        </div>
+    </section>
+
+    <section class="technology-section">
+        <h3>изучаемые технологии</h3>
+        <div class="technology-wrapp">
+            <div class="technology">
+                <div class="technology-logo java"></div>
+                <p class="technology-name">Java</p>
+            </div>
+            <div class="technology">
+                <div class="technology-logo maven"></div>
+                <p class="technology-name">Maven</p>
+            </div>
+            <div class="technology">
+                <div class="technology-logo illij-idea"></div>
+                <p class="technology-name">Illij idea</p>
+            </div>
+            <div class="technology">
+                <div class="technology-logo json"></div>
+                <p class="technology-name">JSON</p>
+            </div>
+            <div class="technology">
+                <div class="technology-logo git"></div>
+                <p class="technology-name">Git</p>
+            </div>
+            <div class="technology">
+                <div class="technology-logo rest"></div>
+                <p class="technology-name">REST</p>
+            </div>
+            <div class="technology">
+                <div class="technology-logo maven"></div>
+                <p class="technology-name">Maven</p>
+            </div>
+            <div class="technology decoration">
+                <div class="technology-logo"></div>
+                <p class="technology-name"></p>
+            </div>
+            <div class="technology">
+                <div class="technology-logo git"></div>
+                <p class="technology-name">Git</p>
+            </div>
+            <div class="technology">
+                <div class="technology-logo java"></div>
+                <p class="technology-name">Java</p>
+            </div>
+            <div class="technology">
+                <div class="technology-logo json"></div>
+                <p class="technology-name">JSON</p>
+            </div>
+            <div class="technology remove-sd">
+                <div class="technology-logo rest"></div>
+                <p class="technology-name">REST</p>
+            </div>
+            <div class="technology">
+                <div class="technology-logo illij-idea"></div>
+                <p class="technology-name">Illij idea</p>
+            </div>
+            <div class="technology decoration">
+                <div class="technology-logo"></div>
+                <p class="technology-name"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="teachers-section">
+        <h3>Преподаватели курса</h3>
+        <p class="teachers-header">Вас будут обучать практикующие специалисты, работающие в топовых компаниях.</p>
+        <div id="teachers-slider" class="responsive">
+
+            <div class="teacher-container">
+                <div class="teacher-photo" id="teacher1"></div>
+                <div class="teacher-info">
+                    <h4 class="teacher-name">Наталья<br>Кравченко</h4>
+                    <p class="teacher-position">Senior Java Software<br>Engineer</p>
+                    <div class="teacher-company"></div>
+                </div>
+            </div>
+
+            <div class="teacher-container">
+                <div class="teacher-photo" id="teacher2"></div>
+                <div class="teacher-info">
+                    <h4 class="teacher-name">Станислав<br>Пархоменко</h4>
+                    <p class="teacher-position">Java Senior Engineer</p>
+                    <div class="teacher-company"></div>
+                </div>
+            </div>
+            
+            <div class="teacher-container">
+                <div class="teacher-photo" id="teacher3"></div>
+                <div class="teacher-info">
+                    <h4 class="teacher-name">Владимир<br>Сулевский</h4>
+                    <p class="teacher-position">Senior Java Developer</p>
+                    <div class="teacher-company"></div>
+                </div>
+            </div>
+
+            <div class="teacher-container">
+                <div class="teacher-photo" id="teacher4"></div>
+                <div class="teacher-info">
+                    <h4 class="teacher-name">Максим<br>Фарсиков</h4>
+                    <p class="teacher-position">Senior Java Software<br>Engineer</p>
+                    <div class="teacher-company"></div>
+                </div>
+            </div>
+
+            <div class="teacher-container">
+                <div class="teacher-photo" id="teacher1"></div>
+                <div class="teacher-info">
+                    <h4 class="teacher-name">Наталья<br>Кравченко</h4>
+                    <p class="teacher-position">Senior Java Software<br>Engineer</p>
+                    <div class="teacher-company"></div>
+                </div>
+            </div>
+
+            <div class="teacher-container">
+                <div class="teacher-photo" id="teacher2"></div>
+                <div class="teacher-info">
+                    <h4 class="teacher-name">Станислав<br>Пархоменко</h4>
+                    <p class="teacher-position">Java Senior Engineer</p>
+                    <div class="teacher-company"></div>
+                </div>
+            </div>
+            
+            <div class="teacher-container">
+                <div class="teacher-photo" id="teacher3"></div>
+                <div class="teacher-info">
+                    <h4 class="teacher-name">Владимир<br>Сулевский</h4>
+                    <p class="teacher-position">Senior Java Engineer</p>
+                    <div class="teacher-company"></div>
+                </div>
+            </div>
+
+            <div class="teacher-container">
+                <div class="teacher-photo" id="teacher4"></div>
+                <div class="teacher-info">
+                    <h4 class="teacher-name">Максим<br>Фарсиков</h4>
+                    <p class="teacher-position">Senior Java Software<br>Engineer</p>
+                    <div class="teacher-company"></div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
